@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #000;
+    min-height: 200vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+
+}
+.banner_shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+header > ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+header>ul>li{
+    position: relative;
+    list-style: none;
+
+}
+
+.banner_info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: left;
+    justify-content: left;
+    top: 35%;
+    width: 100%;
+    position: relative;
+    left: 10%;
+    
+}
+.banner_info>button{
+    height: 50px;
+    width: 150px;
+    background-color: #199604;
+    outline: 0;
+    outline-width: 0;
+    outline-style: none;
+    border: none;
+}
+
+header>ul>li>a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+
+}
+.banner_info{
+    width: 800px;
+}
+.banner_info>h1{
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.banner_info>h2{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.banner_info>button{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about{
+    position: relative;
+    width: 100%;
+}
+.about>p{
+    color:#fff;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    
+}
+
+.container .section{
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background:#000;
+
+}
+
+.container .section:nth-child(1)
+{
+    background: url(header.jpg);
+    background-size: cover;
+}
+.container .section:nth-child(2)
+{
+   background-color: white;
+
+}
+
+.aboutus{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #6D6C6C;
+    
+}
+.aboutus>h1{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;;
+}
+.aboutus>h2{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.aboutus>img{
+    height: 400px;
+    object-fit: contain;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.aboutus>p{
+    text-align: center;
+    padding-bottom:15px;
+}
+.container .section:nth-child(3)
+{
+    background-color: black  !important;
+    height: 200px !important;
+}
+.call_to_action{
+    height: 200px;
+    background-color: #0B4801;
+}
+.call_to_action>h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top:50px;
+    color: white;
+}
+.call_to_action>p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+.row_one{
+    display: flex;
+}
+.row_one>img{
+    width: 50%;
+    height: 300px;
+    flex: 0.5;
+}
+.row_one_info{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    text-align: left;
+    justify-content: center;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.row_one_info>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.row_one_info>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #6D6C6C;
+}
+.row_one_info>p{
+    padding-bottom:10px ;
+    color: #6D6C6C;
+}
+.row_one_info>button{
+    width: 150px;
+    height: 50px;
+    background-color: #199604;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.row_two{
+    display: flex;
+}
+.row_two>img{
+    flex: 0.5;
+    width: 50%;
+}
+.row_two>.row_two_info{
+    margin-top: -80px;
+    flex: 0.5;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.row_two_info>h1{
+    font-weight: 500;
+}
+.row_two_info>h2{
+    font-weight: 500;
+}
+.row_two_info>button{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #199604;
+    color: white;
+    border: none;
+}
+.container .section:nth-child(4)
+{
+    background-color:black;
+    
+}
+
+
+
+/** <<<<<<<<<<<<<<-------------------Strenghting Section-------------------------->>**/
+
+.fitness_info{
+    display: flex;
+}
+.fitness_info_section{
+flex: 0.4;
+display: flex;
+flex-direction: column;
+align-content: flex-end;
+justify-content:flex-end;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+.heading{
+ font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+padding: 50px;
+text-align: center;
+padding-top: 100px !important;
+}
+.fitness_info_section_one{
+    padding: 20px;
+    padding-left: 180px!important;
+}
+.fitness_info_section_one>p{
+    width: 300px;
+}
+.fitness_info_section_one>h1{
+    font-size: 20px;
+}
+.fitness_info_section_two{
+    padding: 20px;
+    padding-left: 180px!important;
+}
+.fitness_info_section_two>p{
+    width: 300px;
+}
+.fitness_info_section_two>h1{
+    font-size: 20px;
+}
+
+.fitness_info_image{
+flex: 0.2;
+
+}
+.fitness_info_image>img{
+    width: 300px;
+}
+.fitness_info_sectiontwo{
+flex: 0.4;
+}
+
+.fitness_info_sectiontwo_one{
+    width: 300px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.fitness_info_sectiontwo_one>h1{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+.container .section:nth-child(5)
+{
+    background-color:white;
+    
+}
+
+.container .section:nth-child(6)
+{
+    background-color:black;
+    
+}
